@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aloha Apparel Co.</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+    <!--
+    header section
+    -->
+    <header>
+        <div class="logo">
+            <img src="images/aloha-logo.svg" alt="Aloha Apparel Co. logo" />
+        </div>        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#updates">Updates</a></li>
+            </ul>
+        </nav>        
+        <div class="cart">
+            <img src="images/cart-icon.svg" alt="Cart Icon" />
+        </div>
+    </header>
+
+    <!--
+    banner section
+    -->
+    <section class="banner container">
+        <div class="banner-content text-shadow">
+            <p>New collection</p>
+            <h1>Spring/Summer 2018</h1> 
+        </div>        
+    </section>
+
+    <!--
+    categories section
+    -->
+    <section class="categories container">
+        <div class="about-content" id="about">
+            <h2>Hand-Crafted <em>Styles</em></h2>
+            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p></div>
+        <div id="shop" class="shop text-shadow">
+            <a href="" class="category category-mens">
+                Men&apos;s
+            </a>
+            <a href="" class="category category-trends">
+                Trends
+            </a>
+            <a href="" class="category category-glasses">
+                Glasses
+            </a>
+            <a href="" class="category category-sale">
+               Sale
+            </a>
+            <a href="" class="category category-bags">
+                Bags
+            </a>
+            <a href="" class="category category-womens">
+                Women&apos;s
+            </a>
+        </div>
+    </section>
+
+    <!--
+    products section
+    -->
+    <section class="container" id="featured">
+        <h2>Most-loved <em>Products</em></h2>
+        <ul class="products-container">
+            <li class="products">
+                <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress" />
+                <p>Dresses</p>
+                <h3>Stretch Knit Dress</h3>
+                <p>$169.00</p>
+                <button class="cart-button">Add to Cart</button></li>
+            <li class="products">
+                <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" />
+                <p>Shirts</p>
+                <h3>Cotton blue shirt</h3>
+                <p>$189.00</p>
+                <button class="cart-button">Add to Cart</button>
+            </li>
+            <li class="products">
+                <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress" />
+                <p>Dresses</p>
+                <h3>Checked Stretch Dress</h3>
+                <p>$129.00</p>
+                <button class="cart-button">Add to Cart</button>
+            </li>
+            <li class="products">
+                <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack" />
+                <p>Bags</p>
+                <h3>Blue Hipster Backpack</h3>
+                <p>$69.00</p>
+                <button class="cart-button">Add to Cart</button>
+            </li>
+        </ul>
+    </section>
+
+    <!--
+    sign-up section
+    -->
+    <section class="sign-up container" id="updates">
+        <div class="sign-up-content text-shadow">
+            <h2>Sign-up for <em>Updates</em></h2>
+            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+            <form class="form-subscribe" action="submit.php" method="post">
+                <div class="input-button">
+                    <input type="text" name="email" value placeholder="Your Email"/>
+                    <button class="subscribe-button" type="submit">Subscribe</button> 
+                </div>
+            </form>
+        </div>  
+    </section>
+
+    <!--
+    footer section
+    -->
+    <footer class="container">
+        <div class="footer-contact">
+            <p>&copy; 2018 Aloha Apparel Co.</p>
+            <p>Powered by HTML and CSS.</p>
+            <br />
+            <p>604-604-6040. <a href="mailto:info@alohaapparel.com" target="_blank">info@alohaapparel.com</a>
+            </p>
+            <br />
+            <div class="address">
+                <p>1490 W Broadway</p>
+                <p>Vancouver, BC, Canada</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <ul>
+                <li>
+                   <a href=""><span class="fa fa-facebook">&nbsp;</span><span class="social-link-name">Facebook</span></a>
+                </li>
+                <li>
+                   <a href=""><span class="fa fa-twitter">&nbsp;</span><span class="social-link-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="fa fa-instagram">&nbsp;</span><span class="social-link-name">Instagram</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="fa fa-pinterest">&nbsp;</span><span class="social-link-name">Pinterest</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="fa fa-google-plus">&nbsp;</span><span class="social-link-name">Google+</span></a>
+                </li>
+            </ul>    
+        </div>       
+    </footer>
+   
+</body>
+</html>
