@@ -37,7 +37,7 @@ h2 {
     padding: 4rem 0 2rem 0;
 }
 
-h2 em {
+h2 .bold-text {
     font-style: normal;
     font-weight: bold;
 }
