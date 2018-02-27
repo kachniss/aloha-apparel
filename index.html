@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>  
 </head>
 <body>
     <!--
     header section
     -->
-    <header>
+    <header class="container">
         <div class="logo">
             <img src="images/aloha-logo.svg" alt="Aloha Apparel Co. logo" />
         </div>        
@@ -28,6 +30,7 @@
         </nav>        
         <div class="cart">
             <img src="images/cart-icon.svg" alt="Cart Icon" />
+            <div class="cart-items js-cart-items"></div>
         </div>
     </header>
 
@@ -81,28 +84,28 @@
                 <p>Dresses</p>
                 <h3>Stretch Knit Dress</h3>
                 <p>$169.00</p>
-                <button class="cart-button">Add to Cart</button></li>
-            <li class="products">
+                <button class="cart-button js-cart-button">Add to Cart</button></li>
+            <!-- <li class="products">
                 <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" />
                 <p>Shirts</p>
                 <h3>Cotton blue shirt</h3>
                 <p>$189.00</p>
-                <button class="cart-button">Add to Cart</button>
+                <button class="cart-button js-cart-button">Add to Cart</button>
             </li>
             <li class="products">
                 <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress" />
                 <p>Dresses</p>
                 <h3>Checked Stretch Dress</h3>
                 <p>$129.00</p>
-                <button class="cart-button">Add to Cart</button>
+                <button class="cart-button js-cart-button">Add to Cart</button>
             </li>
             <li class="products">
                 <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack" />
                 <p>Bags</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p>$69.00</p>
-                <button class="cart-button">Add to Cart</button>
-            </li>
+                <button class="cart-button js-cart-button">Add to Cart</button>
+            </li> -->
         </ul>
     </section>
 
@@ -116,7 +119,7 @@
             <form class="form-subscribe" action="submit.php" method="post">
                 <div class="input-button">
                     <input type="text" name="email" value placeholder="Your Email"/>
-                    <button class="subscribe-button" type="submit">Subscribe</button> 
+                    <button class="subscribe-button js-submit-button" type="button">Subscribe</button> 
                 </div>
             </form>
         </div>  
@@ -157,7 +160,6 @@
                 </li>
             </ul>    
         </div>       
-    </footer>
-   
+    </footer> 
 </body>
 </html>
