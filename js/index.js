@@ -37,8 +37,12 @@ $(function(){
     //
     $('.main-carousel').flickity({
         // options
-        cellAlign: 'center',
-        contain: true
+        cellAlign: 'left',
+        contain: true,
+        prevNextButtons: false,
+        freeScroll: true,
+        imagesLoaded: true,
+        wrapAround: true  
       });
 });
 
