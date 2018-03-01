@@ -21,8 +21,8 @@ $(function(){
     //
     // @source https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2 02/26/2018
     //
-    var bannerHeight = $("header").height();
     $('a[href^="#"]').on('click', function(event) {
+        var bannerHeight = $("header").height();
         var target = $(this.getAttribute('href'));
         if(target.length) {
             event.preventDefault();
@@ -31,5 +31,14 @@ $(function(){
             }, 1000);
         }
     });
+
+    //
+    // Flickity
+    //
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'center',
+        contain: true
+      });
 });
 

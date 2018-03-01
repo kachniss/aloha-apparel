@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/index.js"></script>  
+    <script src="js/index.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <!--
@@ -51,7 +53,7 @@
         <div class="about-content" id="about">
             <h2>Hand-Crafted <span class="bold-text">Styles</span></h2>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p></div>
-        <div id="shop" class="shop text-shadow">
+        <div id="shop" class="shop-content text-shadow">
             <a href="" class="category category-mens">
                 Men&apos;s
             </a>
@@ -78,34 +80,62 @@
     -->
     <section class="container" id="featured">
         <h2>Most-loved <span class="bold-text">Products</span></h2>
-        <ul class="products-container">
-            <li class="products">
+        <ul class="main-carousel">
+            <li class="products carousel-cell">
                 <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress" />
                 <p>Dresses</p>
                 <h3>Stretch Knit Dress</h3>
                 <p>$169.00</p>
                 <button class="cart-button js-cart-button">Add to Cart</button></li>
-            <!-- <li class="products">
+            <li class="products carousel-cell">
                 <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" />
                 <p>Shirts</p>
                 <h3>Cotton blue shirt</h3>
                 <p>$189.00</p>
                 <button class="cart-button js-cart-button">Add to Cart</button>
             </li>
-            <li class="products">
+            <li class="products carousel-cell">
                 <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress" />
                 <p>Dresses</p>
                 <h3>Checked Stretch Dress</h3>
                 <p>$129.00</p>
                 <button class="cart-button js-cart-button">Add to Cart</button>
             </li>
-            <li class="products">
+            <li class="products carousel-cell">
                 <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack" />
                 <p>Bags</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p>$69.00</p>
                 <button class="cart-button js-cart-button">Add to Cart</button>
-            </li> -->
+            </li>
+            <li class="products carousel-cell">
+                <img src="images/demin-overall-shorts.jpg" alt="Denim Overall Shorts" />
+                <p>Denim</p>
+                <h3>Denim Overall Shorts</h3>
+                <p>$89.00</p>
+                <button class="cart-button js-cart-button">Add to Cart</button>
+            </li>
+            <li class="products carousel-cell">
+                <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress" />
+                <p>Dresses</p>
+                <h3>Pink Dotted Dress</h3>
+                <p>$99.00</p>
+                <button class="cart-button js-cart-button">Add to Cart</button>
+            </li>
+            <li class="products carousel-cell">
+                <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress" />
+                <p>Dresses</p>
+                <h3>Blue Silk Dress</h3>
+                <p>$159.00</p>
+                <button class="cart-button js-cart-button">Add to Cart</button>
+            </li>
+            <li class="products carousel-cell">
+                <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt" />
+                <p>T-Shirts</p>
+                <h3>Cotton Yellow T-Shirt</h3>
+                <p>$79.00</p>
+                <button class="cart-button js-cart-button">Add to Cart</button>
+            </li>
         </ul>
     </section>
 
