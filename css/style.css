@@ -60,7 +60,7 @@ a:hover {
 
 .text-shadow, .text-shadow a {
     color: #fff;
-    text-shadow: 2px 2px 2px #6b6969;
+    text-shadow: 0.2rem 0.2rem 0.2rem #6b6969;
 }
 
 section {
@@ -89,6 +89,10 @@ header {
     align-items: center;
 }
 
+.logo, .cart {
+    padding-top: 1rem;
+}
+
 .logo {
     padding-left: 1rem;
 }
@@ -101,15 +105,14 @@ nav {
     order: 3;
     flex-basis: 100%;
     border-top: 1.5px solid #c4c2c2;
-    padding: 1rem;
-    margin: -1rem 0.5rem 0 0.5rem;
+    padding: 1rem 0;
+    /* margin: -1rem 0.5rem 0 0.5rem; */
 }
 
 nav li {
     text-transform: uppercase;
     display: inline-block;
     padding: 0 0.8rem;
-    font-size: 16px;
 }
 
 .logo img {
@@ -118,10 +121,12 @@ nav li {
 
 .cart {
     display: flex;
+    height: 4rem;
 }
 
 .cart img {
     width: 4rem;
+    /* height: 4rem; */
 }
 
 .cart-items {
@@ -202,23 +207,12 @@ nav li {
 
 .category:hover {
     color: #e2574c;
-    text-shadow: 4px 4px 4px #000;
-}
-
-
-/* @source https://css-tricks.com/almanac/selectors/a/after-and-before/ 02/10/2018 */
-.category::before {
-    margin: 50% 0;
-    content: "";
+    text-shadow: 0.4rem 0.4rem 0.4rem #000;
 }
 
 .category-mens {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/mens-category.jpg);
     flex-basis: 100%;
-}
-
-.category-mens::before, .category-womens::before {
-    margin: 25% 0;
 }
 
 .category-trends {
@@ -249,13 +243,12 @@ nav li {
 /*
 /* products styles */
 .flickity-viewport {
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .carousel-cell {
     width: 100%;
-    cursor: context-menu;
+    cursor: auto;
 }
 
 .products p {
@@ -283,10 +276,10 @@ nav li {
 /*
 /* sign-up styles */
 .sign-up {
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) no-repeat center bottom/120rem 250%,
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) no-repeat center bottom/120rem 250%,
                 url(../images/wave-bkgd.jpg) no-repeat center bottom/120rem 250%;
     margin: 2rem 0 0 0;
-    padding: 1.5rem 0;
+    padding: 3rem 0;
 }
 
 .form-subscribe {
@@ -392,10 +385,6 @@ footer a {
     header {
         width: 100%;
     }
-    
-    .logo {
-        padding-top: 1rem;
-    }
 
     nav {
         order: 2;
@@ -417,9 +406,13 @@ footer a {
         font-size: 15px;
     }
     
+    .logo, .cart {
+        padding-bottom: 1rem;
+    }
+    
     .logo {
         order: 1;
-        flex-basis: 5%;  
+        flex-basis: 5%;
     }
     
     .cart {
@@ -455,10 +448,7 @@ footer a {
         border: 0.2rem solid #fff;
         font-size: 2rem;
     }
-    .category::before {
-        margin: 25% 0;
-        content: "";
-    }
+
     .category-mens {
         flex-basis: 50%;
         border-left: 0;

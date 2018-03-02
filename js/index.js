@@ -1,5 +1,29 @@
 $(function(){ 
     //
+    // set banner margin for fixed nav
+    //
+    function setBannerMargin() {
+        var bannerMargin = $("header").height();
+        $(".banner").css("margin-top", bannerMargin);
+    }
+
+    setBannerMargin();
+    
+    //
+    // set the width of a category element
+    //
+    function setCategoryWidth() {
+        var categoryWidth = $(".category").width();
+        $(".category").css("height", categoryWidth/2);
+    }
+    
+    setCategoryWidth();
+    $(window).on('resize', function() {
+        setCategoryWidth();
+        setBannerMargin();
+    });
+    
+    //
     // show items in cart
     //
     var cartItems = 0;
@@ -42,7 +66,7 @@ $(function(){
         prevNextButtons: false,
         freeScroll: true,
         imagesLoaded: true,
-        wrapAround: true  
-      });
+        wrapAround: true
+    });
 });
 
