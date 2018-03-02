@@ -552,5 +552,12 @@ footer a {
     /* footer styles 1240px */
     .footer-contact, .footer-social {
         margin: 0 5rem;
-    }  
+    }
+    
+    @media screen and (min-width: 1440px) {
+        .sign-up {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) no-repeat center bottom/100% 250%,
+                        url(../images/wave-bkgd.jpg) no-repeat center bottom/100% 250%;
+        }  
+    }
 }
