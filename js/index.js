@@ -64,7 +64,7 @@ $(function(){
         cellAlign: 'left',
         contain: true,
         prevNextButtons: false,
-        freeScroll: true,
+        draggable: true,
         imagesLoaded: true,
         wrapAround: true
     });

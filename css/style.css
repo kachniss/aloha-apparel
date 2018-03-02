@@ -132,7 +132,7 @@ nav li {
 .cart-items {
     content: "0";
     position: absolute;
-    top: 1.5rem;
+    top: 1rem;
     right: 0.7rem;
     font-size: .9em;
     font-weight: bold;
@@ -245,10 +245,19 @@ nav li {
 .flickity-viewport {
     width: 100%; 
 }
+.main-carousel {
+    width: 100%;
+    margin: auto;
+}
 
 .carousel-cell {
     width: 100%;
     cursor: auto;
+}
+
+.products img {
+    max-width: 80%;
+    margin: auto;
 }
 
 .products p {
