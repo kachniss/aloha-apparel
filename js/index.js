@@ -43,7 +43,6 @@ $(function(){
     }
 
     function submitClick() {
-        console.log("submitted!");
         var email = $(".js-email").val();
         if (validateEmail(email)) {
             alert("Thanks for subscribing!");          
