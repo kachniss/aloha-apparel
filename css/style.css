@@ -104,15 +104,20 @@ header {
 nav {
     order: 3;
     flex-basis: 100%;
-    border-top: 1.5px solid #c4c2c2;
+    border-top: 1.5px solid #d7d7d7;
     padding: 1rem 0;
-    /* margin: -1rem 0.5rem 0 0.5rem; */
+    margin: 0 0.5rem;
 }
 
 nav li {
     text-transform: uppercase;
     display: inline-block;
     padding: 0 0.8rem;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+nav li:hover {
+    text-shadow: 0.1rem 0.1rem 0.1rem #969696;
 }
 
 .logo img {
@@ -278,7 +283,7 @@ nav li {
 }
 
 .cart-button:hover {
-    background-color:rgba(0, 0, 0, 0.6);
+    background-color: #969696;
 }
 
 /*

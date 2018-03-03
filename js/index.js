@@ -7,8 +7,6 @@ $(function(){
         $(".banner").css("margin-top", bannerMargin);
     }
 
-    setBannerMargin();
-    
     //
     // set the width of a category element
     //
@@ -16,7 +14,8 @@ $(function(){
         var categoryWidth = $(".category").width();
         $(".category").css("height", categoryWidth/2);
     }
-    
+
+    setBannerMargin();
     setCategoryWidth();
     $(window).on('resize', function() {
         setCategoryWidth();
@@ -24,7 +23,7 @@ $(function(){
     });
     
     //
-    // show items in cart
+    // show number of items in the cart
     //
     var cartItems = 0;
     $('.js-cart-button').click(function(){
@@ -36,8 +35,34 @@ $(function(){
     //
     // sign-up button alert
     //
+    // @source https://www.formget.com/email-validation-jquery-codes/ 03/03/2018
+    //
+    function validateEmail(Email) {
+        var pattern = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        return $.trim(Email).match(pattern) ? true : false;
+    }
+
+    function submitClick() {
+        console.log("submitted!");
+        var email = $(".js-email").val();
+        if (validateEmail(email)) {
+            alert("Thanks for subscribing!");          
+        } else {
+            alert("Please enter a valid email address.");
+        }
+        $(".js-email").val("");
+    }
+
     $(".js-submit-button").click(function(){
-        alert("Thanks for subscribing!");
+        submitClick();
+    });
+
+    // @soucre https://stackoverflow.com/questions/895171/prevent-users-from-submitting-a-form-by-hitting-enter 03/03/2018
+    $(".js-email").keypress(function(event) {
+        if(event.keyCode == 13) {
+            event.preventDefault();
+            submitClick();
+        }
     });
 
     //
@@ -45,12 +70,12 @@ $(function(){
     //
     // @source https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2 02/26/2018
     //
-    $('a[href^="#"]').on('click', function(event) {
+    $("a[href^='#']").on("click", function(event) {
         var bannerHeight = $("header").height();
-        var target = $(this.getAttribute('href'));
+        var target = $(this.getAttribute("href"));
         if(target.length) {
             event.preventDefault();
-            $('html, body').stop().animate({
+            $("html, body").stop().animate({
                 scrollTop: target.offset().top - bannerHeight
             }, 1000);
         }
@@ -59,9 +84,8 @@ $(function(){
     //
     // Flickity
     //
-    $('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
+    $(".main-carousel").flickity({
+        cellAlign: "left",
         contain: true,
         prevNextButtons: false,
         draggable: true,
@@ -69,4 +93,3 @@ $(function(){
         wrapAround: true
     });
 });
-
