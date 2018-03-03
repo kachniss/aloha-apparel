@@ -26,7 +26,7 @@ $(function(){
     // show number of items in the cart
     //
     var cartItems = 0;
-    $('.js-cart-button').click(function(){
+    $('.js-add-to-cart-btn').click(function(){
         cartItems++;
         $(".js-cart-items").css("visibility", "visible");
         $(".js-cart-items").text(cartItems);
@@ -52,7 +52,7 @@ $(function(){
         $(".js-email").val("");
     }
 
-    $(".js-submit-button").click(function(){
+    $(".js-subscribe-btn").click(function(){
         submitClick();
     });
 

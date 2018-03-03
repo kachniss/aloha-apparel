@@ -131,13 +131,10 @@ nav li:hover {
 
 .cart img {
     width: 4rem;
-    /* height: 4rem; */
 }
 
 .cart-items {
-    content: "0";
     position: absolute;
-    top: 1rem;
     right: 0.7rem;
     font-size: .9em;
     font-weight: bold;
@@ -216,33 +213,40 @@ nav li:hover {
 }
 
 .category-mens {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/mens-category.jpg);
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                        url(../images/mens-category.jpg);
     flex-basis: 100%;
 }
 
 .category-trends {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/trends-category.jpg);
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                        url(../images/trends-category.jpg);
     border-right: 0.2rem solid #fff;
 }
 
 .category-glasses {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/glasses-category.jpg);
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                        url(../images/glasses-category.jpg);
     border-left: 0.2rem solid #fff;
 }
 
 .category-sale {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/sale-category.jpg);
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                        url(../images/sale-category.jpg);
     border-right: 0.2rem solid #fff;
 }
 
 .category-bags {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/bags-category.jpg);
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                        url(../images/bags-category.jpg);
     border-left: 0.2rem solid #fff;
 }
 
 .category-womens {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/womens-category.jpg);
-    flex-basis: 100%;}
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                        url(../images/womens-category.jpg);
+    flex-basis: 100%;
+}
 
 /*
 /*
@@ -270,7 +274,7 @@ nav li:hover {
     color: #969696;
 }
 
-.cart-button {
+.add-to-cart-btn {
     background-color: #242424;
     color: #fff;
     border: 0;
@@ -282,7 +286,7 @@ nav li:hover {
     margin: 1rem 0;
 }
 
-.cart-button:hover {
+.add-to-cart-btn:hover {
     background-color: #969696;
 }
 
@@ -304,11 +308,11 @@ nav li:hover {
 }
 
 /* @source https://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome 02/07/2018 */
-input, .subscribe-button {
+input, .subscribe-btn {
     outline: 0;
 }
 
-.input-button {
+.email-input {
     position: relative;
     height: 2.5rem;
 }
@@ -324,7 +328,7 @@ input, .subscribe-button {
     font-size: 1rem;
 }
 
-.subscribe-button {
+.subscribe-btn {
     background-color: #e2574c;
     color: #fff;
     border: 0;
@@ -338,7 +342,7 @@ input, .subscribe-button {
     top: 0.2rem;
 }
 
-.subscribe-button:hover {
+.subscribe-btn:hover {
     background-color: #b64036;
 }
 
@@ -396,17 +400,11 @@ footer a {
     /*
     /*
     /* header styles 600px */
-    header {
-        width: 100%;
-    }
-
     nav {
         order: 2;
         flex-basis: 55%;
         border: 0;
         padding: 0;
-        display: flex;
-        justify-content: center;
         margin: 0 0 0 -2.5rem;
         max-width: 20rem;
     }
@@ -433,10 +431,6 @@ footer a {
         order: 3;
         flex-basis: 3%;
         margin-left: 2rem;
-    }
-
-    .cart-items {
-        top: 0.9rem;
     }
 
     /*
@@ -523,8 +517,7 @@ footer a {
     /*
     /* header styles 1240px */
     .cart-items {
-        top: 0.9rem;
-        right: 3.8rem;
+        right: 2.7rem;
     }
 
     /*
@@ -540,7 +533,7 @@ footer a {
     }
 
     .cart {
-        padding-right: 4rem;
+        padding-right: 3rem;
     }
 
     .category {
@@ -567,11 +560,12 @@ footer a {
     .footer-contact, .footer-social {
         margin: 0 5rem;
     }
-    
-    @media screen and (min-width: 1440px) {
-        .sign-up {
-            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) no-repeat center bottom/100% 250%,
-                        url(../images/wave-bkgd.jpg) no-repeat center bottom/100% 250%;
-        }  
-    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* rescaling sign-up background image for bigger screens */
+    .sign-up {
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) no-repeat center bottom/100% 250%,
+                    url(../images/wave-bkgd.jpg) no-repeat center bottom/100% 250%;
+    }  
 }
