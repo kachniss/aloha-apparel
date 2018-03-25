@@ -8,21 +8,6 @@ $(function(){
     }
 
     //
-    // set the width of a category element
-    //
-    function setCategoryWidth() {
-        var categoryWidth = $(".category").width();
-        $(".category").css("height", categoryWidth/2);
-    }
-
-    setBannerMargin();
-    setCategoryWidth();
-    $(window).on('resize', function() {
-        setCategoryWidth();
-        setBannerMargin();
-    });
-    
-    //
     // show number of items in the cart
     //
     var cartItems = 0;

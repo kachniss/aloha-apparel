@@ -189,6 +189,7 @@ nav li:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
+    width: 100vw;
 }
 
 .category {
@@ -203,7 +204,8 @@ nav li:hover {
     box-sizing: border-box; /* @source https://www.w3schools.com/cssref/css3_pr_box-sizing.asp 02/10/18 */
     border-top: 0.2rem solid #fff;
     border-bottom: 0.2rem solid #fff;
-    flex-basis: 50%;
+    width: 50vw;
+    height: 50vw;
     transition: color 1.5s, text-shadow 0.5s;
 }
 
@@ -215,7 +217,7 @@ nav li:hover {
 .category-mens {
     background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
                         url(../images/mens-category.jpg);
-    flex-basis: 100%;
+    width: 100vw;
 }
 
 .category-trends {
@@ -245,7 +247,7 @@ nav li:hover {
 .category-womens {
     background-image:   linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
                         url(../images/womens-category.jpg);
-    flex-basis: 100%;
+    width: 100vw;
 }
 
 /*
@@ -452,13 +454,14 @@ footer a {
     }
 
     .category {
-        flex-basis: 25%;
+        width: 25vw;
+        height: 25vw;
         border: 0.2rem solid #fff;
         font-size: 2rem;
     }
 
     .category-mens {
-        flex-basis: 50%;
+        width: 50vw;
         border-left: 0;
     }
 
@@ -471,7 +474,7 @@ footer a {
     }
 
     .category-womens {
-        flex-basis: 50%;
+        width: 50vw;
         border-right: 0;
     }
 
