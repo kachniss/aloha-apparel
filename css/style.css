@@ -74,6 +74,27 @@ button {
 
 /*
 /*
+/* screen reader */
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+/* .screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+ } */
+
+/*
+/*
 /* header styles */
 header {
     position: fixed;
@@ -184,6 +205,10 @@ nav li:hover {
 /*
 /*
 /* category styles */
+#shop[tabindex="-1"]:focus {
+    outline: 0;
+ }
+
 .shop-content {
     display: flex;
     flex-wrap: wrap;
@@ -300,6 +325,10 @@ nav li:hover {
                 url(../images/wave-bkgd.jpg) no-repeat center bottom/120rem 250%;
     margin: 2rem 0 0 0;
     padding: 3rem 0;
+}
+
+.email-input label {
+    display: none;
 }
 
 .form-subscribe {
