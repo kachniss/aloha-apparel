@@ -82,6 +82,7 @@
     -->
     <section class="container" id="featured">
         <h2>Most-Loved <span class="bold-text">Products</span></h2>
+        <fieldset aria-label="featured-products-carousel" class="carousel-products" aria-controls="carousel">
         <ul class="main-carousel">
             <li class="products carousel-cell">
                 <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress" />
@@ -139,22 +140,26 @@
                 <button class="add-to-cart-btn js-add-to-cart-btn">Add to Cart</button>
             </li>
         </ul>
+    </fieldset>
     </section>
 
     <!--
     sign-up section
     -->
+
     <section class="sign-up container" id="updates">
         <div class="sign-up-content text-shadow">
             <h2>Sign-up for <span class="bold-text">Updates</span></h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+        
             <form class="form-subscribe" action="submit.php" method="post">
                 <div class="email-input">
                     <label for="email">Enter your email</label>
                     <input id="email" class="js-email" type="text" name="email" value placeholder="Your Email"/>
-                    <button class="subscribe-btn js-subscribe-btn" type="button">Subscribe</button> 
+                    <button aria-label="Subscribe" button class="subscribe-btn js-subscribe-btn" type="button">Subscribe</button> 
                 </div>
             </form>
+         
         </div>  
     </section>
 
@@ -177,19 +182,19 @@
         <div class="footer-social">
             <ul>
                 <li>
-                   <a href=""><span class="fa fa-facebook" aria-hidden="true">&nbsp;</span><span class="social-link-name">Facebook</span></a>
+                   <a href="#"><span class="fa fa-facebook" aria-hidden="true">&nbsp;</span><span class="social-link-name">Facebook</span></a>
                 </li>
                 <li>
-                   <a href=""><span class="fa fa-twitter" aria-hidden="true">&nbsp;</span><span class="social-link-name">Twitter</span></a>
+                   <a href="#"><span class="fa fa-twitter" aria-hidden="true">&nbsp;</span><span class="social-link-name">Twitter</span></a>
                 </li>
                 <li>
-                    <a href=""><span class="fa fa-instagram" aria-hidden="true">&nbsp;</span><span class="social-link-name">Instagram</span></a>
+                    <a href="#"><span class="fa fa-instagram" aria-hidden="true">&nbsp;</span><span class="social-link-name">Instagram</span></a>
                 </li>
                 <li>
-                    <a href=""><span class="fa fa-pinterest" aria-hidden="true">&nbsp;</span><span class="social-link-name">Pinterest</span></a>
+                    <a href="#"><span class="fa fa-pinterest" aria-hidden="true">&nbsp;</span><span class="social-link-name">Pinterest</span></a>
                 </li>
                 <li>
-                    <a href=""><span class="fa fa-google-plus" aria-hidden="true">&nbsp;</span><span class="social-link-name">Google+</span></a>
+                    <a href="#"><span class="fa fa-google-plus" aria-hidden="true">&nbsp;</span><span class="social-link-name">Google+</span></a>
                 </li>
             </ul>    
         </div>       
