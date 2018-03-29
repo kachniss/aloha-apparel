@@ -18,6 +18,10 @@ body {
     width: 100%;
 }
 
+.center {
+    margin: auto;
+}
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     font-weight: normal;
@@ -41,14 +45,16 @@ h2 .bold-text {
     font-weight: bold;
 }
 
-h3 {
+h3, a {
     color: #e2574c;
+}
+
+h3 {
     font-size: 1.5rem;
     padding: 0.8rem;
 }
 
 a {
-    color: #e2574c;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.5s; /* @source https://codepen.io/Onomicon/pen/ZvqLYz 02/28/18 */
@@ -154,10 +160,13 @@ nav li:hover {
     width: 4rem;
 }
 
+.cart-items, .subscribe-btn {
+    font-size: .9rem;
+}
+
 .cart-items {
     position: absolute;
     right: 0.7rem;
-    font-size: .9em;
     font-weight: bold;
     background: #e2574c;
     color:#fff;
@@ -182,14 +191,16 @@ nav li:hover {
 }
 
 .banner-content {
-    margin: auto;
     padding-top: 6rem;
     max-width: 50rem;
 }
 
+.banner p, category {
+    font-size: 1.5rem;
+}
+
 .banner p {
     font-weight: bold;
-    font-size: 1.5rem;
     text-transform: uppercase;
     padding-top: 8rem;
 }
@@ -198,7 +209,6 @@ nav li:hover {
 /*
 /* info styles */
 .about-content, .sign-up-content {
-    margin: auto;
     padding: 0 2rem;
 }
 
@@ -219,7 +229,6 @@ nav li:hover {
 
 .category {
     text-transform: uppercase;
-    font-size: 1.5rem;
     font-weight: bold;
     background-size: cover;
     background-repeat: no-repeat;
@@ -283,7 +292,6 @@ nav li:hover {
 }
 .main-carousel {
     width: 100%;
-    margin: auto;
 }
 
 .carousel-cell {
@@ -293,7 +301,6 @@ nav li:hover {
 
 .products img {
     max-width: 80%;
-    margin: auto;
 }
 
 .products p {
@@ -332,7 +339,6 @@ nav li:hover {
 }
 
 .form-subscribe {
-    margin: auto;
     display: flex;
     justify-content: center;
     padding: 1rem 0;
@@ -345,7 +351,6 @@ input, .subscribe-btn {
 
 .email-input {
     position: relative;
-    height: 2.5rem;
 }
 
 .form-subscribe input {
@@ -366,7 +371,6 @@ input, .subscribe-btn {
     border-radius: 4rem;
     height: 2.2rem;
     width: 6rem;
-    font-size: 0.9rem;
     /* @source https://stackoverflow.com/questions/15314407/how-to-add-button-inside-input 02/12/18 */
     position: absolute;
     right: 0.3rem;
@@ -380,15 +384,20 @@ input, .subscribe-btn {
 /*
 /*
 /* footer styles */
+footer, .footer-contact {
+    padding: 2rem 0;
+}
+
+footer, footer a {
+    color: #fff;
+}
+
 footer {
     background-color: #242424;
-    color: #fff;
-    padding: 2rem 0;
     margin-top: 0.5rem;
 }
 
 footer a {
-    color: #fff;
     text-decoration: underline;
     font-weight: normal;
 }
@@ -396,7 +405,6 @@ footer a {
 .footer-contact {
     font-family: 'Playfair Display';
     line-height: 1.5em;
-    padding: 2rem 0;
 }
 
 .address {
@@ -417,7 +425,6 @@ footer a {
 
 .footer-social li {
     display: inline-block;
-    width: 2rem;
 }
 
 /*
@@ -437,11 +444,7 @@ footer a {
         border: 0;
         padding: 0;
         margin: 0 0 0 -2.5rem;
-        max-width: 20rem;
-    }
 
-    nav ul {
-        max-width: 20rem;
     }
     
     nav li {
@@ -531,12 +534,10 @@ footer a {
 
     .footer-social li {
         display: block;
-        width: 10rem;
     }
     
     .fa {
         margin-right: 1rem;
-        width: 1rem;
     }
 
     .social-link-name {
