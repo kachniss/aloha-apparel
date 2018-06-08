@@ -1,5 +1,7 @@
 # Project 1 Aloha Apparel
 
+![Aloha Apparel Screenshot](https://github.com/kachniss/kachniss-portfolio/blob/master/public/images/screenshots/aloha-1.jpg "This is a screenshot of the Aloha Apparel Project")
+
 This is the Aloha Apparel project (Project 1) for RED Academy Web Development course 2018.
 
 It uses HTML, CSS & CSS Flexbox and jQuery to create a responsive website for a clothing company.
@@ -17,4 +19,4 @@ The user is able to take a look at different categories, which are marked as lin
 * [Flickity](https://flickity.metafizzy.co) plugin for image slider
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the GPL License.
